@@ -1,5 +1,5 @@
 FROM java:8-jdk-alpine
-COPY ./build/libs/nasapicture-0.0.1-SNAPSHOT.war /usr/app/
+COPY ./python-practise/target/my-app-1.0-SNAPSHOT.jar /usr/app/ 
 WORKDIR /usr/app
 EXPOSE 8080
-ENTRYPOINT ["java", "-jar", "nasapicture-0.0.1-SNAPSHOT.war"]
+ENTRYPOINT ["java", "-jar", "my-app-1.0-SNAPSHOT.jar"]
